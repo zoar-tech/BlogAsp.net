@@ -1,0 +1,16 @@
+@model Post
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<h1></h1>
+
+<div class="container">
+    <div class="row">
+        <h1>@Html.DisplayFor(model => model.Title)</h1>
+    </div>
+    <hr>
+    <div class="row">
+        <p>@Html.DisplayFor(model => model.PostBody)</p>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+bin/
+obj/
+wwwroot/
+Properties/
+appsettings.Development.json
+Migrations
+app.db
+.vscode/

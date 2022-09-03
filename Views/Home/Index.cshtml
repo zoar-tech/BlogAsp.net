@@ -1,0 +1,19 @@
+@model IEnumerable<Post>
+
+@{
+    ViewData["Title"] = "HomePage App";
+}
+
+<div class="container">
+    <h1 class="mb-2">Blog Post</h1>
+    <hr>
+    @foreach (var item in Model)
+    {
+        <ul>
+            <h2>
+                <li><label>@Html.DisplayFor(modelItem => item.Title)</label></li>
+            </h2>
+            <li>@item.PostBody <a asp-controller="Home" asp-action="PostDetail" asp-route-id="@item.Id">Read more<a></li>
+        </ul>
+    }
+</div>
